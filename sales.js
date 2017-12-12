@@ -118,5 +118,5 @@ var alki = {
     };
   },
 }
-
-pike.render();
+// render on page load
+// pike.render();
