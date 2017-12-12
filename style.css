@@ -1,0 +1,94 @@
+header {
+  background: #A24F31;
+  height: 100px;
+}
+
+header div {
+  width: 960px;
+  margin: 0 auto;
+}
+
+header img {
+  float: left;
+  margin-top: 15px;
+  margin-right: 50px;
+  width: 180px;
+}
+
+header li {
+  display: inline-block;
+  margin-right: 50px;
+  margin-top: 45px;
+
+}
+.highlight {
+  background-color: #552311;
+  font-family: 'Indie Flower', cursive;
+  color: #EE8660;
+}
+
+body {
+  background: #31A28B;
+
+}
+
+.data {
+  font-family: 'arial', sans-serif;
+  color: #A24F31;
+}
+
+.text {
+  font-family: 'times', serif;
+  color: #095546;
+}
+
+main {
+  width: 960px;
+  margin: 30px auto;
+}
+
+.sub-banners li {
+  float: left;
+  width: 300px;
+  margin-right: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.sub-banners li:last-child {
+  margin-right: 0;
+}
+
+.featured-banner {
+  float: left;
+  margin-right: 30px;
+}
+
+.featured-banner section {
+  float: left;
+  margin-right: 30px;
+}
+
+main section h2 {
+  font-size: 26px;
+  margin-bottom: 5px;
+  padding-top: 30px;
+  background-color: #095546;
+
+}
+
+main section p {
+  line-height: 50px;
+  background: #552311;
+
+}
+
+footer {
+  clear: both;
+  height: 150px;
+  background: #A24F31;
+}
+
+.table {
+  background-color: #095546;
+}
