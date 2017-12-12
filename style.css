@@ -19,10 +19,27 @@ header li {
   display: inline-block;
   margin-right: 50px;
   margin-top: 45px;
+
+}
+.highlight {
+  background-color: #552311;
+  font-family: 'Indie Flower', cursive;
+  color: #EE8660;
 }
 
 body {
   background: #31A28B;
+
+}
+
+.data {
+  font-family: 'arial', sans-serif;
+  color: #A24F31;
+}
+
+.text {
+  font-family: 'times', serif;
+  color: #095546;
 }
 
 main {
@@ -56,6 +73,8 @@ main section h2 {
   font-size: 26px;
   margin-bottom: 5px;
   padding-top: 30px;
+  background-color: #095546;
+
 }
 
 main section p {
@@ -68,4 +87,8 @@ footer {
   clear: both;
   height: 150px;
   background: #A24F31;
+}
+
+.table {
+  background-color: #095546;
 }
