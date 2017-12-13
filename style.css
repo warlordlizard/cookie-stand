@@ -92,3 +92,6 @@ footer {
 .table {
   background-color: #095546;
 }
+ th {
+   text-align: left;
+ }
