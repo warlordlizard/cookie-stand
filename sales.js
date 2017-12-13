@@ -10,6 +10,7 @@ function random(min,max) {
 
 var allStores = [];
 var storeTable = document.getElementById('store-sales');
+var hourlytotal = [];
 
 function Store(name, minCust, maxCust, avgCookie) {
   this.name= name;
@@ -21,6 +22,7 @@ function Store(name, minCust, maxCust, avgCookie) {
   this.totalDailySales= 0;
   this.calcCookiesEachHr();
   allStores.push(this);
+  hourlytotal.push(this.totalDailySales);
 }
 
 
@@ -79,5 +81,20 @@ function renderStoreRows(){
     allStores[i].render();
   };
 }
+
+function renderFooterRow() {
+  var trEl = document.createElement('tr');
+  // var tdEl = document.createElement('td');
+  var thEl = document.createElement('th');
+  thEl.textContent = 'Hourly Totals:';
+  trEl.appendChild(thEl);
+  for (var i = 0; i < hours.length; i++) {
+    thEl = document.createElement('th');
+    thEl.textContent = 'Unk';
+    trEl.appendChild(thEl);
+  };
+  storeTable.appendChild(trEl);
+}
 renderHeaderRow();
 renderStoreRows();
+renderFooterRow();
