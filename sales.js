@@ -39,7 +39,6 @@ Store.prototype.calcCookiesEachHr= function(){
   };
 };
 
-
 Store.prototype.render = function() {
    var trEl = document.createElement('tr');
    var tdEl = document.createElement('td');

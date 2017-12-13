@@ -29,7 +29,6 @@ header li {
 
 body {
   background: #31A28B;
-
 }
 
 .data {
@@ -74,13 +73,11 @@ main section h2 {
   margin-bottom: 5px;
   padding-top: 30px;
   background-color: #095546;
-
 }
 
 main section p {
   line-height: 50px;
   background: #552311;
-
 }
 
 footer {
@@ -92,6 +89,7 @@ footer {
 .table {
   background-color: #095546;
 }
- th {
+
+th {
    text-align: left;
- }
+}
