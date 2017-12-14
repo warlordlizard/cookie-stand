@@ -1,6 +1,7 @@
 header {
   background: #A24F31;
   height: 100px;
+  font-size: 40px;
 }
 
 header div {
@@ -8,19 +9,33 @@ header div {
   margin: 0 auto;
 }
 
-header img {
+.logoLeft {
   float: left;
   margin-top: 15px;
   margin-right: 50px;
   width: 180px;
 }
 
+.logoRight {
+  float: right;
+  margin-top: 15px;
+  margin-right: 50px;
+  width: 180px;
+}
+
+
 header li {
   display: inline-block;
   margin-right: 50px;
   margin-top: 1px;
-
+  font-family: 'Indie Flower', cursive;
+  font-size: 24px;
 }
+
+header h1,nav {
+  margin: 0px 0  0 350px ;
+}
+
 .highlight {
   background-color: #552311;
   font-family: 'Indie Flower', cursive;
@@ -31,10 +46,8 @@ body {
   background: #31A28B;
 }
 
-.data {
-  font-family: 'arial', sans-serif;
-  color: #A24F31;
-}
+/*.data {
+}*/
 
 .text {
   font-family: 'times', serif;
@@ -42,6 +55,7 @@ body {
 }
 
 main {
+  clear: both;
   width: 960px;
   margin: 30px auto;
 }
@@ -54,6 +68,9 @@ main {
   margin-bottom: 30px;
 }
 
+.family {
+  width: 300px;
+}
 .sub-banners li:last-child {
   margin-right: 0;
 }
@@ -63,41 +80,72 @@ main {
   margin-right: 30px;
 }
 
+.merch {
+  margin-top: 50px;
+  border-top: 2px solid black;
+}
+.locations {
+  margin-top: 50px;
+  border-top: 2px solid black;
+}
+
 .featured-banner section {
   float: left;
   margin-right: 30px;
 }
 
-main section h2 {
+main h2 {
+  clear: both;
   font-size: 40px;
-  margin-bottom: 5px;
+  margin: 5px 0;
   padding-top: 30px;
   /*background-color: #095546;*/
+  /*margin-top: 50px;*/
+  /*border-top: 2px solid black;*/
 }
 
-/*main section p {
-  line-height: 50px;
+main section p {
+  /*line-height: 50px;*/
   background: #552311;
-}*/
+  font-size: 20px;
+}
 section ul {
-  /*padding-left: 50px;*/
+  margin-top: 5px;
+  padding-left: 20px;
+  font-size: 24px;
 }
 section li {
   /*text-align: center;*/
-  padding-left: 50px;
+  padding:0 680px 0 40px;
   list-style: none;
+  color: #EE8660;
 }
 footer {
   clear: both;
-  height: 150px;
+  height: 60px;
   background: #A24F31;
+  font-size: 20px;
+  padding: 30px;
 }
 
 .table {
   background-color: #095546;
   color:#31A28B;
+  font-size: 20px;
+  border: 2px solid black;
+  font-family: 'arial', sans-serif;
+  /*color: #A24F31;*/
+  /*border-width: 1px;
+  margin: 2px;*/
 }
 
 th {
    text-align: left;
+   padding: 5px;
+     border: 2px solid black;
+   /*margin: 30px auto 0 auto;*/
+}
+td {
+    border: 2px solid black;
+    padding: 5px;
 }

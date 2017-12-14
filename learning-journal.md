@@ -11,6 +11,8 @@ Constructors were not quite as difficult as I thought they would be.  102 probab
 - Constructors
 - Tables
 
+Wednesday:
+Lots of review, expanded info on index.  learned by watching Sam about HTML building with auto complete using tab or enter.
 
 # Trying MD stuffs:
 # heading
