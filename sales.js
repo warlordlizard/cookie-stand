@@ -41,6 +41,14 @@ Store.prototype.calcCookiesEachHr= function(){
   };
 };
 
+// Store.prototype.calcHourlyTotal = function () {
+//   for(var i = 0; i < hours.length; i++) {
+//     var oneHour = Math.ceil(this.custEachHr[i] * this.avgCookie);
+//     this.cookiesEachHr.push(oneHour);
+//     this.totalDailySales += oneHour;
+//   };
+// };
+
 Store.prototype.render = function() {
    var trEl = document.createElement('tr');
    var tdEl = document.createElement('td');
