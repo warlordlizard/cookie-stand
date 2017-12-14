@@ -9,8 +9,12 @@ function random(min,max) {
 //day 2 constructor
 
 var allStores = [];
+var form = document.getElementById('store_form');
 var storeTable = document.getElementById('store-sales');
 var hourlytotal = [];
+// var data = [];
+
+
 
 function Store(name, minCust, maxCust, avgCookie) {
   this.name= name;
@@ -69,6 +73,19 @@ new Store('Seatac International Airport', 3, 24, 1.2);
 new Store('Seattle Center', 11, 38, 3.7);
 new Store('Capitol Hill', 20, 38, 2.3);
 new Store('Alki Beach', 2, 16, 4.6);
+
+function fornData(event) {
+  event.preventDefault();
+
+  var store = event.target.store.value;
+  var minCust = event.target.minCust.value;
+  var maxCust = event.target.maxCust.value;
+  var avgCookie = event.target.avgCookie.value;
+
+  allStores.push(name, minCust, maxCust, avgCookie);
+  createTable();
+  form.reset();
+}
 
 function renderHeaderRow() {
   var trEl = document.createElement('tr');

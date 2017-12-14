@@ -24,6 +24,31 @@
     </header>
     <main>
       <!-- <img class="hero" src="http://placehold.it/960x450"> -->
+      <form id="store_form">
+        <h2>Add a new store</h2>
+        <fieldset>
+          <label for="store"><span class="form">Store Name:</span></label>
+          <input type="text" name="store" placeholder="Enter Store Name..." value="" required>
+        </fieldset>
+
+        <fieldset>
+          <label for="minCust"><span class="form">Minimum Customers per hour:</span></label>
+          <input type="number" name="minCust" value="" placeholder="Min cust/hr" required>
+        </fieldset>
+
+        <fieldset>
+          <label for="maxCust"><span class="form">Maximum Customers per hour:</span></label>
+          <input type="number" name="maxCust" value="" placeholder="Max cust/hr" required>
+        </fieldset>
+
+        <fieldset>
+          <label for="avgCookie"><span class="form">Average cookies per customer:</span></label>
+          <input type="number" name="avgCookie" value="" placeholder="Avg cookies/cust" required>
+        </fieldset>
+
+        <button id="submit_btn" type="submit">Add store</button>
+
+      </form>
       <ul class="sub-banners">
         <!-- <li><img src="http://placehold.it/300x375"></li>
         <li><img src="http://placehold.it/300x375"></li>

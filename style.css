@@ -2,8 +2,30 @@ header {
   background: #A24F31;
   height: 100px;
   font-size: 40px;
+  color: #31A28B;
+}
+fieldset input {
+  margin: 5px;
+}
+form {
+  width: 500px;
+  background-color: #444;
+  color: black;
+  border: solid 1px black;
+  padding-bottom: 50px;
+  padding-left: 20px;
+}
+.form {
+  float: left;
+  width: 200px;
+  text-align: right;
+  padding: 10px;
 }
 
+#submit_btn {
+  margin: 20px;
+  float: right;
+}
 header div {
   width: 960px;
   margin: 0 auto;
@@ -23,6 +45,9 @@ header div {
   width: 180px;
 }
 
+.hero {
+  height: 600px;
+}
 
 header li {
   display: inline-block;
@@ -47,6 +72,17 @@ header h1,nav {
   padding: 2px;
   border: 1px dotted #ee8660;
 }
+.cutter {
+    width: 300px;
+    height: 190px;
+    overflow: hidden;
+}
+
+.cutter img {
+    width: 300px;
+    height: 300px;
+    margin: -50px 0 -60px 0px;
+}
 
 body {
   background: #31A28B;
@@ -64,6 +100,8 @@ main {
   clear: both;
   width: 960px;
   margin: 30px auto;
+  background: #552311;
+  padding: 30px;
 }
 
 .sub-banners li {
@@ -76,17 +114,10 @@ main {
 .sub-banners img {
   width: 300px;
 }
-.family {
-  width: 300px;
-}
+
 .sub-banners li:last-child {
   margin-right: 0;
 }
-
-/* .featured-banner {
-  float: left;
-  margin-right: 30px;
-} */
 
 .merch {
   margin-top: 50px;
@@ -94,7 +125,7 @@ main {
 }
 
 .merch p {
-  background: #552311;
+  /* background: #552311; */
 }
 
 .locations {
@@ -102,24 +133,16 @@ main {
   border-top: 2px solid black;
 }
 
-/* .featured-banner section {
-  float: left;
-  margin-right: 30px;
-} */
-
 main h2 {
   clear: both;
   font-size: 40px;
   margin: 5px 0;
   padding-top: 30px;
-  /*background-color: #095546;*/
-  /*margin-top: 50px;*/
-  /*border-top: 2px solid black;*/
+  color:#31A28B;
 }
 
 main section p {
-  /*line-height: 50px;*/
-  background: #552311;
+  /* background: #552311; */
   font-size: 20px;
 }
 section ul {
