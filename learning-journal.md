@@ -14,6 +14,9 @@ Constructors were not quite as difficult as I thought they would be.  102 probab
 Wednesday:
 Lots of review, expanded info on index.  learned by watching Sam about HTML building with auto complete using tab or enter.
 
+Thursday:
+Ok so making the form was not that bad.  getting the form to work with the table didn't work too well.  almost wanted to rewrite whole js file.  hopefully I understand better tomorrow.
+
 # Trying MD stuffs:
 # heading
 ## heading
