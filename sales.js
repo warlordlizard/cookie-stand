@@ -86,9 +86,9 @@ function formData(event) {
   allStores.push(new Store(name, minCust, maxCust, avgCookie));
   renderHeaderRow();
   // renderStoreRows();
+  renderFormRow();
   // renderFooterRow();
   form.reset();
-  renderFormRow();
 }
 
 function renderFormRow() {
