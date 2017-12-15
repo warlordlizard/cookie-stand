@@ -11,7 +11,7 @@ function random(min,max) {
 var allStores = [];
 var form = document.getElementById('store_form');
 var storeTable = document.getElementById('store-sales');
-var hourlytotal = [];
+// var hourlytotal = [];
 // var data = [];
 
 
@@ -26,7 +26,7 @@ function Store(name, minCust, maxCust, avgCookie) {
   this.totalDailySales= 0;
   this.calcCookiesEachHr();
   allStores.push(this);
-  hourlytotal.push(this.totalDailySales);
+  // hourlytotal.push(this.totalDailySales);
 }
 
 
@@ -74,17 +74,27 @@ new Store('Seattle Center', 11, 38, 3.7);
 new Store('Capitol Hill', 20, 38, 2.3);
 new Store('Alki Beach', 2, 16, 4.6);
 
-function fornData(event) {
+function formData(event) {
   event.preventDefault();
-
-  var store = event.target.store.value;
+  var reset = document.getElementById('store-sales');
+  reset.innerText = '';
+  var name = event.target.store.value;
   var minCust = event.target.minCust.value;
   var maxCust = event.target.maxCust.value;
   var avgCookie = event.target.avgCookie.value;
 
-  allStores.push(name, minCust, maxCust, avgCookie);
-  createTable();
+  allStores.push(new Store(name, minCust, maxCust, avgCookie));
+  renderHeaderRow();
+  // renderStoreRows();
+  // renderFooterRow();
   form.reset();
+  renderFormRow();
+}
+
+function renderFormRow() {
+  for(var i = 0; i < allStores.length; i++){
+    allStores[i].render();
+  };
 }
 
 function renderHeaderRow() {
@@ -107,19 +117,21 @@ function renderStoreRows(){
   };
 }
 
-function renderFooterRow() {
-  var trEl = document.createElement('tr');
-  // var tdEl = document.createElement('td');
-  var thEl = document.createElement('th');
-  thEl.textContent = 'Hourly Totals:';
-  trEl.appendChild(thEl);
-  for (var i = 0; i < hours.length; i++) {
-    thEl = document.createElement('th');
-    thEl.textContent = 'Unk';
-    trEl.appendChild(thEl);
-  };
-  storeTable.appendChild(trEl);
-}
+form.addEventListener('submit', formData);
+
+// function renderFooterRow() {
+//   var trEl = document.createElement('tr');
+//   // var tdEl = document.createElement('td');
+//   var thEl = document.createElement('th');
+//   thEl.textContent = 'Hourly Totals:';
+//   trEl.appendChild(thEl);
+//   for (var i = 0; i < hours.length; i++) {
+//     thEl = document.createElement('th');
+//     thEl.textContent = 'Unk';
+//     trEl.appendChild(thEl);
+//   };
+//   storeTable.appendChild(trEl);
+// }
 renderHeaderRow();
 renderStoreRows();
-renderFooterRow();
+// renderFooterRow();
