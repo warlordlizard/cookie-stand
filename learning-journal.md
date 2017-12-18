@@ -17,6 +17,9 @@ Lots of review, expanded info on index.  learned by watching Sam about HTML buil
 Thursday:
 Ok so making the form was not that bad.  getting the form to work with the table didn't work too well.  almost wanted to rewrite whole js file.  hopefully I understand better tomorrow.
 
+Friday/weekend:
+resisted the urge to start again.  made an array of data for starting stores and changed the way some things were calculated.  Still did not figure out totals yet but I got the form data to populate correctly and the numbers to be random (within min and max).  overall pretty happy with result. 
+
 # Trying MD stuffs:
 # heading
 ## heading
